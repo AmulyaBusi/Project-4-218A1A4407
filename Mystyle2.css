@@ -1,0 +1,22 @@
+
+
+nav{
+    text-align: right;
+}
+nav ul li{
+    display: inline;
+    padding: 1%;
+}
+nav ul li a{
+    color: black;
+    font-weight: bold;
+}
+body{
+    background: url(logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    background: rgb(11, 107, 114);
+    color: white;
+}

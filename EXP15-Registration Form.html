@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="Mystyle2.css">
+    <style>
+        .form-center{
+            display:flex;
+            justify-content: center;
+        }
+         body{
+            background:aliceblue;
+         }
+            /*Phone*/
+            @media  screen and (min-width:320px) {
+                body{
+                    background-color: rgb(129, 64, 27);
+                }
+            }
+            /*Tablet*/
+            @media screen and (min-width:620px){
+                body{
+                    background-color: rgb(238, 130, 130);
+                }
+            }
+            /*Laptop smallscreen*/
+            @media screen and (min-width:821px) and (max-width:1000px){
+                body{
+                    background-color: rgb(50, 20, 78);
+                }
+            }
+            /*Largescreen*/
+            @media screen and (min-width:1201px){
+                body{
+                    background-color: rgb(25, 153, 147);
+                }
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./Home.html"> Home </a></li>
+            <li><a href="./About.html"> About </a></li>
+            <li><a href="./ContactUs.html"> Contact Us</a></li>
+            <li><a href="./EXP15-Registration Form.html"> Sign in </a></li>
+            <li><a href="./Exp11-LoginPage.html"> Login</a></li>
+            
+        </ul>
+    </nav>
+    <br>
+    <h2><marquee>Create account in Catchy Lyfe.....</marquee></h2><br>
+    <center>
+    <h2>Sign In Form</h2></center>
+    <center><img src="signinimg.gif" height="250" width="300"></center><br>
+    <div class="form-center">
+    <form action="Regi.html" method="post">
+        <label>UserName:</label> <input type="text" name="uname"placeholder="UserName"><br><br>
+        <label>Password:</label> <input type="password" name="pass"placeholder="Password"><br><br>
+        <label>Date of Birth:</label> <input type="date" name="bname"><br><br>
+        <label>Email id:</label> <input list="email" name="office" id="myofficeid">
+        <datalist id="email">
+            <option value="218A1A4407@risekrishnasaiprakasam.edu.in"></option>
+            <option value="ammu@gmail.com"></option>
+            <option value="ammu@yahoo.com"></option>
+            
+        </datalist><br><br>
+        <label>Enter your Mobile Number :</label><input type="tel" name="personal" id="per1" pattern="[0-9]{10}" title="The Ten digits number"><br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="F">Female<br><br>
+        <input type="radio" name="gender" value="o">Other
+        <label>Qualification:</label>
+        <select name="Branch">
+            <option value="other">SSC</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Degree">Degree</option>
+            <option value="BTech">BTech</option>
+        </select><br><br>
+        <label>Languages known:</label><br>
+        <input type="checkbox" name="lang[]" value="C">Telugu<br>
+        <input type="checkbox" name="lang[]" value="C++">Hindi<br>
+        <input type="checkbox" name="lang[]" value="Python">English<br>
+        <input type="checkbox" name="lang[]" value="Java">Tamil<br><br>
+        <label>Address:</label><br>
+        <textarea name="address" cols="25" rows="3">Enter your message here!</textarea><br><br>
+        <input type="submit" value="Submit">
+    </form></div><br><Br><br>
+        <footer>
+            <p><b><center>&copy; CatchyLyfe Pvt.Ltd. All Rights are reserved.</center></b></p>
+        </footer>
+</body>
+</html>
